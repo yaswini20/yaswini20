@@ -1,51 +1,96 @@
 HOSPITAL MANAGEMENT SYSTEM
 
 #include<stdio.h>
+
 #include<conio.h>
+
 #include<stdlib.h>
+
 #include<string.h>
+
 void clrscr(void) {
+
+
 system("cls()"); }
+
 void emp(void);
+
 void menu(void);
+
 void pat(void);
+
 void appointment(void);
+
 void inv(void);
+
 struct address {
+
  int hno;
+ 
  char street[40];
+ 
  char city[40];
+ 
  char state[40];
+
 };
+
 struct patient {
+
  char name[40];
+
 char fname[40];
+
  int age;
+ 
  char bg[3];
+ 
  char gender;
+ 
  char regn[10];
+ 
  struct address a;
+ 
  char ph[10];
+ 
  char disease[60];
+ 
  char doc_name[40];
+ 
  char history[200];
+ 
  char date[10];
+ 
  char treatment[40];
+ 
  char med[40];
+
 };
+
 struct staff {
+
  char name[40];
+ 
  char fname[40];
  
 int age;
+ 
  char bg[3];
+ 
  char gender;
+ 
  char uid[10];
+ 
  struct address b;
+ 
  char ph[10];
+ 
  double salary;
+ 
  char desig[40];
+
 };
+
 struct appointment {
 char ap_name[20];
 char ph[10];
